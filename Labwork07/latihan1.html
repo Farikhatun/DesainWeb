@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Latihan1. Kalkulator</title>
+</head>
+<body>
+	<script type="text/javascript">
+    function hitung(pilihan){
+        var a=document.getElementById('bil1').value;
+        var b=document.getElementById('bil2').value;
+        a = parseInt(a)
+        b = parseInt(b)
+        if (pilihan=='+'){
+            document.getElementById('hasil').value = a + b;
+        }
+        else if(pilihan == '-'){
+            document.getElementById('hasil').value = a - b;
+        }
+        else if(pilihan == 'x'){
+            document.getElementById('hasil').value = a * b;
+        }
+        else {
+            document.getElementById('hasil').value = a / b;
+        }
+    }
+
+	</script>
+	<pre>
+        <center>
+        <h2>Kalkulator</h2>
+        a <input name="a" type="text" value="" id="bil1" />
+
+        b <input name="b" type="text" value="" id="bil2" />
+        
+        <input name="hitung" type="button" value="+" onclick="hitung(this.value)"/>  <input name="hitung" type="button" value="-" onclick="hitung(this.value)"/>  <input name="hitung" type="button" value="x" onclick="hitung(this.value)"/>  <input name="hitung" type="button" value=":" onclick="hitung(this.value)"/>
+
+        = <input name="hasil" type="text" value="0" id="hasil" />
+    </center>
+    </pre>
+	
+</body>
+</html>

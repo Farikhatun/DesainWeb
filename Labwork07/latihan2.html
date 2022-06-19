@@ -1,0 +1,35 @@
+<html>
+  <head>
+        <title>Latihan2. Highlight</title>
+        <SCRIPT>
+        var toggle =true;
+        function highlight() {
+            var elements = document.getElementsByTagName ('hl'); // get all elements
+            for(var i = 0; i < elements.length; i++){
+                elements[i].style.backgroundColor = toggle ? "yellow" : "White";
+                elements[i].style.color = toggle ? "red" : "black";
+                elements[i].style.fontWeight = toggle ? "bold" : "normal";
+            }
+            toggle = !toggle;
+        }
+        </SCRIPT>  
+ 
+  </head>
+  <body>
+      <h1>PTIK FKIP UNS</h1>
+      <p>The <hl>Faculty of Teacher Training and Education</hl>, <hl>Sebelas Maret University</hl>, 
+      Surakarta is an <hl>Educational PersonnelEducation Institution (LPTK)</hl> which has 24 study programs in 6 majors. Each study program has 
+      its own characteristics in producing <hl>superior, strong and intelligent educational staff</hl>.</p>
+      
+      <p>The <hl>Informatics and Computer Technology Education (PTIK)</hl> study program is planned to take shelter in the management
+      of the <hl>Engineering and Vocational Education (PTK)</hl> department. This placement revises our previous statement, where
+      the PTIK study program is under the direction of the P.MIPA department. PTIK is a study program that will produce
+      graduates who are <hl>prioritized to teach in vocational/vocational programs</hl>. So, it would be better if PTIK was under
+      the PTK department which oversees vocational programs such as <hl>Building Engineering Education</hl>, and <hl>Mechanical
+      Engineering Education</hl>. To meet the needs of lecturers in the field of information technology that cannot be met by
+      the PTK department, PTIK will conduct <hl>resource sharing with the mathematics study program</hl>.</p>
+      <br>
+      <BUTTON onclick="highlight()">Highlight Paragraf</BUTTON>
+    
+    </body>
+</html>
